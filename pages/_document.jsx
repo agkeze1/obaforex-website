@@ -6,7 +6,6 @@ export default class AppDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <title>Home One</title>
           {/* favicons Icons */}
           <link
             rel="apple-touch-icon"
@@ -90,10 +89,11 @@ export default class AppDocument extends Document {
             href="assets/vendors/bxslider/css/jquery.bxslider.css"
           />
 
-          <link rel="stylesheet" href="assets/css/aivons.css" />
-          <link rel="stylesheet" href="assets/css/aivons-responsive.css" />
+          <link rel="stylesheet" href="assets/css/main.css" />
+          <link rel="stylesheet" href="assets/css/main-responsive.css" />
+          <link rel="stylesheet" href="assets/css/app.css" />
         </Head>
-        <body className="home page template-slider style-simple button-flat layout-full-width if-zoom if-border-hide no-content-padding no-shadows header-classic header-fw minimalist-header-no sticky-header sticky-tb-color ab-hide subheader-both-center menu-link-color menuo-no-borders mobile-tb-hide mobile-side-slide mobile-mini-mr-lc tablet-sticky mobile-sticky be-reg-2174 elementor-default elementor-kit-10 elementor-page elementor-page-2">
+        <body>
           <Main />
           <NextScript />
 
