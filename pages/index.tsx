@@ -511,9 +511,6 @@ const Home = () => {
         {/* Our Partners */}
         <Partners />
 
-        {/* Our Team */}
-        <Team />
-
         {/* Google Map */}
         <section className="google-map">
           <iframe

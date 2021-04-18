@@ -21,6 +21,10 @@
   mix-blend-mode: normal;
 }
 
+.financial-advice__single-2:before {
+  display: none;
+}
+
 @media screen and (max-width: 1199px) {
   .financial-advice__box .tab-btns .tab-btn {
     max-width: 220px;
