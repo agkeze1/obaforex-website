@@ -1,6 +1,8 @@
 import { Layout } from "../component/Layout";
-import team from "../data/team.json";
 import { Slider } from "../component/Slider";
+import { Partners } from "../component/Partners";
+import { Team } from "../component/Team";
+import { JoinUs } from "../component/JoinUs";
 
 const Home = () => {
   return (
@@ -507,92 +509,10 @@ const Home = () => {
         </section>
 
         {/* Our Partners */}
-        <section className="counters-one">
-          <div
-            className="counters-one-bg"
-            style={{
-              backgroundImage:
-                "url(assets/images/backgrounds/counter-one-bg.jpg)",
-            }}
-          ></div>
-          <div className="container">
-            <div
-              className="section-title text-center"
-              style={{ marginBottom: "0" }}
-            >
-              <h2
-                className="section-title__title"
-                style={{ color: "white", paddingTop: "100px" }}
-              >
-                Our Partners
-              </h2>
-              <span className="section-title__tagline">
-                Obaforex Top Partners
-              </span>
-            </div>
-            <ul className="counters-one__box list-unstyled">
-              <li className="counter-one__single">
-                <img src="assets/images/hotforex.png" alt="HotForex Logo" />
-                <p className="counter-one__text">Hot Forex</p>
-              </li>
-              <li className="counter-one__single">
-                <img src="assets/images/binary.png" alt="HotForex Logo" />
-                <p className="counter-one__text">Binary</p>
-              </li>
-              <li className="counter-one__single">
-                <img src="assets/images/xm-broker.png" alt="HotForex Logo" />
-                <p className="counter-one__text">XM Broker</p>
-              </li>
-              <li className="counter-one__single">
-                <img src="assets/images/berry.png" alt="HotForex Logo" />
-                <p className="counter-one__text">Berry Market</p>
-              </li>
-            </ul>
-          </div>
-        </section>
+        <Partners />
 
         {/* Our Team */}
-        <section className="team-one team-page">
-          <div className="container">
-            <div className="section-title text-center">
-              <h2 className="section-title__title">Our Team</h2>
-              <span className="section-title__tagline">
-                Obaforex Top Team and Trading experts
-              </span>
-            </div>
-            <div className="row">
-              {/* Team One Single */}
-              {team?.map((rec, idx) => (
-                <div
-                  key={idx}
-                  className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp"
-                  data-wow-delay="0ms"
-                  data-wow-duration="1500ms"
-                >
-                  <div className="team-one__single">
-                    <div className="team-one__img">
-                      <img src={rec?.img_path} alt="" />
-                      <div className="team-one__hover-content">
-                        <h3 className="team-one__name">{rec?.name}</h3>
-                        <p className="team-one__title">{rec?.position}</p>
-                      </div>
-                      <div className="team-one__bottom">
-                        <div className="team-one__social">
-                          <a href="#">
-                            <i className="fab fa-twitter"></i>
-                          </a>
-                          <a href="#" className="clr-fb">
-                            <i className="fab fa-facebook"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        <Team />
 
         {/* Google Map */}
         <section className="google-map">
@@ -604,32 +524,7 @@ const Home = () => {
         </section>
 
         {/* Join us tag */}
-        <section className="cta-one">
-          <div
-            className="cta-one-bg"
-            style={{
-              backgroundImage: "url(assets/images/backgrounds/cta-one-bg.png)",
-            }}
-          ></div>
-          <div className="container">
-            <div className="row">
-              <div className="col-xl-12">
-                <div className="cta-one__inner">
-                  <div className="cta-one__left">
-                    <h2 className="cta-one__title">
-                      we’re delivering the best <br /> customer experience
-                    </h2>
-                  </div>
-                  <div className="cta-one__right">
-                    <a href="join" className="thm-btn cta-one__btn">
-                      Join Us
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <JoinUs />
       </Layout>
     </>
   );

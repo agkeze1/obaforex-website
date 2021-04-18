@@ -4177,7 +4177,7 @@ ul {
 .team-one {
   position: relative;
   display: block;
-  padding: 120px 0 90px;
+  padding: 80px 0 90px;
 }
 
 .team-one__container {
@@ -5553,7 +5553,7 @@ ul {
 }
 
 .page-header__bg {
-  background-image: url(../images/backgrounds/page-header-bg.jpg);
+  background-image: url(../images/backgrounds/banner.png);
   background-size: cover;
   background-color: var(--thm-black);
   background-blend-mode: luminosity;

@@ -58,7 +58,7 @@ export const Footer = () => {
                       </div>
                       <div className="text">
                         <p>
-                          No.233 Building Material Along Bukuru Express Way,
+                          No. 233 Building Material Along Bukuru Express Way,
                           Jos, Nigeria.
                         </p>
                       </div>

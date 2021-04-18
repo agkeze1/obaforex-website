@@ -106,10 +106,6 @@ export const Header = () => {
                   className="main-menu-wrapper__search search-toggler icon-magnifying-glass1"
                 ></a>
               </div>
-              {/* <div className="main-menu-wrapper__phone-contact">
-                <p>Need help? Talk to an expert</p>
-                <a href="tel:+92-666-888-0000">+92 666 888 0000</a>
-              </div> */}
             </div>
           </div>
         </nav>
